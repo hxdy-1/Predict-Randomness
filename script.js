@@ -20,7 +20,7 @@ const winCount = 2;
 let attemptsRemaining = 30, correctGuesses = 0, gameOver = false, highScore = 0, redeemCode = "";
 
 function init() {
-    inputRedeemEl.value = ""
+    inputRedeemEl.value = "";
 
     correctGuesses = 0;
 
@@ -69,11 +69,14 @@ for (let i = 0; i < btn_cmnEl.length; i++) {
             redeemCode += btnClicked + ",";
 
             if (correctGuesses === winCount) {
-                infoEl.textContent = "You won!!!"
+                infoEl.textContent = "You won!!!";
                 gameOver = true;
-                ans_boxEl.style.backgroundImage = "none"
-                ans_boxEl.style.backgroundColor = "rgba(0, 255, 0, .5)"
-                ans_boxEl.style.color = "black"
+                ans_boxEl.style.backgroundImage = "none";
+                ans_boxEl.style.backgroundColor = "rgba(0, 255, 0, .5)";
+                ans_boxEl.style.color = "black";
+                setTimeout(() => {
+                    ans_boxEl.textContent = "?";
+                }, 650)
                 inputRedeemEl.style.opacity = "1";
 
                 if (attemptsRemaining > highScore) {
@@ -89,7 +92,7 @@ for (let i = 0; i < btn_cmnEl.length; i++) {
 
 restartBtnEl.addEventListener("click", () => {
 
-    let inputValue = inputRedeemEl.value;
+    const inputValue = inputRedeemEl.value;
 
     redeemCode = redeemCode.slice(0, redeemCode.length - 1);
 
@@ -97,8 +100,9 @@ restartBtnEl.addEventListener("click", () => {
 
         highScore++;
 
-        scoreEl.textContent = highScore
+        scoreEl.textContent = highScore;
+        
     }
-
+    
     init()
 })
