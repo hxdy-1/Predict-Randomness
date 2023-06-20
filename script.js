@@ -26,22 +26,22 @@ let attemptsRemaining = 50,
     redeemCode = "";
 
 function init() {
-    inputRedeemEl.value = redeemCode = "";
-
     correctGuesses = 0;
 
     attemptsRemaining = 50;
     attemptsEl.textContent = attemptsRemaining;
-
+    
     infoEl.textContent = "Start the game by clicking a no...";
     ans_boxEl.textContent = "?";
 
     gameOver = false;
+    
     ans_boxEl.style.backgroundImage =
         "linear-gradient(to bottom right, rgb(38, 43, 51), rgb(117, 105, 115),rgb(198, 109, 77))";
-    ans_boxEl.style.backgroundColor = "";
-    ans_boxEl.style.color = "white";
-    inputRedeemEl.style.opacity = "0";
+        ans_boxEl.style.backgroundColor = "";
+        ans_boxEl.style.color = "white";
+        inputRedeemEl.style.opacity = "0";
+        inputRedeemEl.value = redeemCode = "";
 }
 
 init();
@@ -97,7 +97,7 @@ for (let i = 0; i < btn_cmnEl.length; i++) {
 restartBtnEl.addEventListener("click", () => {
     const inputValue = inputRedeemEl.value;
 
-    redeemCode = redeemCode.slice(0, redeemCode.length - 1);
+    // redeemCode = redeemCode.slice(0, redeemCode.length - 1);
 
     if (inputValue === redeemCode) {
         highScore++;

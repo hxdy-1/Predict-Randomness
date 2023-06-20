@@ -8,7 +8,7 @@
     .left {
         height: auto;
         padding: .5em;
-        width: 95%;
+        width: 90%;
         gap: 2rem;
     }
 
@@ -20,10 +20,6 @@
         gap: 0;
         transform: scale(.9);
         margin-top: 1rem;
-    }
-
-    .num_btn_container {
-        width: auto;
     }
 
     .restart_btn_container {
@@ -38,5 +34,9 @@
     .txt_container {
         font-size: large;
         gap: 3rem;
+    }
+
+    .num_btn_container {
+        width: 100vw;
     }
 }
