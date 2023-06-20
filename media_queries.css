@@ -1,0 +1,42 @@
+@media (max-width: 501px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right,
+    .left {
+        height: auto;
+        padding: .5em;
+        width: 95%;
+        gap: 2rem;
+    }
+
+    .left {
+        margin-top: 1rem;
+    }
+
+    .right {
+        gap: 0;
+        transform: scale(.9);
+        margin-top: 1rem;
+    }
+
+    .num_btn_container {
+        width: auto;
+    }
+
+    .restart_btn_container {
+        flex-direction: row;
+    }
+
+    .restart_btn {
+        margin-top: 0;
+        padding: 1em 3em;
+    }
+
+    .txt_container {
+        font-size: large;
+        gap: 3rem;
+    }
+}

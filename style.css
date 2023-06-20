@@ -62,7 +62,7 @@ input::placeholder {
 .left, .right {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .right{
