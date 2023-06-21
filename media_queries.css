@@ -22,6 +22,10 @@
         margin-top: 1rem;
     }
 
+    .input_redeem {
+        padding: .8em;
+    }
+
     .restart_btn_container {
         flex-direction: row;
         /* padding: 0 1em; */
@@ -29,7 +33,7 @@
 
     .restart_btn {
         margin-top: 0;
-        padding: 1em 3em;
+        padding: .8em 2em;
     }
 
     .txt_container {
