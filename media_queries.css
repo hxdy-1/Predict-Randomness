@@ -24,10 +24,12 @@
 
     .input_redeem {
         padding: .8em;
+        width: 10rem;
     }
 
     .restart_btn_container {
         flex-direction: row;
+        justify-content: space-between;
         /* padding: 0 1em; */
     }
 
