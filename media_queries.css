@@ -30,7 +30,6 @@
     .restart_btn_container {
         flex-direction: row;
         justify-content: space-between;
-        /* padding: 0 1em; */
     }
 
     .restart_btn {

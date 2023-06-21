@@ -58,16 +58,13 @@ input::placeholder {
 
 .right,
 .left {
-    width: 50%;
-    padding: 4em;
-    height: 100vh;
-}
-
-.left,
-.right {
     display: flex;
     flex-direction: column;
     gap: 8rem;
+
+    width: 50%;
+    padding: 4em;
+    height: 100vh;
 }
 
 .right {
