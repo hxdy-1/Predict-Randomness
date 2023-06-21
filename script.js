@@ -97,11 +97,11 @@ for (let i = 0; i < btn_cmnEl.length; i++) {
 restartBtnEl.addEventListener("click", () => {
     const inputValue = inputRedeemEl.value;
 
-    // redeemCode = redeemCode.slice(0, redeemCode.length - 1);
+    redeemCode = redeemCode.slice(0, redeemCode.length - 1);
+    console.log(inputValue, redeemCode)
 
-    if (inputValue === redeemCode) {
+    if (inputValue !== "" && inputValue === redeemCode) {
         highScore++;
-
         scoreEl.textContent = highScore;
     }
 

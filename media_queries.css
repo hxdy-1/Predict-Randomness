@@ -24,6 +24,7 @@
 
     .restart_btn_container {
         flex-direction: row;
+        /* padding: 0 1em; */
     }
 
     .restart_btn {
